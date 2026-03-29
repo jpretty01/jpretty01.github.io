@@ -118,7 +118,7 @@
   position: relative;
   min-height: 640px;
   background:
-    radial-gradient(circle at top right, rgba(109, 145, 222, 0.34), transparent 34%),
+    radial-gradient(circle at top right, rgba(109, 145, 222, 0.22), transparent 34%),
     linear-gradient(160deg, #15386f 0%, #1f4f98 40%, #0f2a57 100%);
   overflow: hidden;
   padding: 34px;
@@ -131,7 +131,7 @@
   position: absolute;
   inset: 24px;
   border-radius: 28px;
-  border: 1px solid rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.10);
 }
 
 .hero-brand-panel {
@@ -140,9 +140,7 @@
   flex: 1;
   border-radius: 28px;
   border: 1px solid rgba(255,255,255,0.12);
-  background:
-    radial-gradient(circle at top left, rgba(255,255,255,0.12), transparent 36%),
-    linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+  background: linear-gradient(180deg, rgba(8,21,46,0.18), rgba(8,21,46,0.10));
   padding: 34px;
   display: flex;
   flex-direction: column;
@@ -150,41 +148,41 @@
 }
 
 .hero-brand-copy {
-  max-width: 320px;
+  max-width: 360px;
 }
 
 .hero-brand-title {
-  color: rgba(255,255,255,0.96);
+  color: #ffffff;
   font-size: 2rem;
   font-weight: 800;
-  line-height: 1.1;
+  line-height: 1.15;
   letter-spacing: -0.03em;
 }
 
 .hero-brand-text {
   margin-top: 16px;
-  color: rgba(235,242,255,0.82);
+  color: rgba(255,255,255,0.86);
   line-height: 1.75;
   font-size: 1rem;
 }
 
 .hero-brand-list {
   display: grid;
-  gap: 12px;
-  margin-top: 24px;
+  gap: 14px;
+  margin-top: 26px;
 }
 
 .hero-brand-pill {
-  display: inline-flex;
-  width: fit-content;
-  max-width: 100%;
-  padding: 10px 14px;
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.16);
+  display: block;
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.14);
   background: rgba(255,255,255,0.08);
-  color: rgba(255,255,255,0.92);
-  font-size: 0.9rem;
+  color: #ffffff;
+  font-size: 0.95rem;
   font-weight: 600;
+  line-height: 1.55;
 }
 
 .hero-floating-card {
@@ -497,11 +495,6 @@
 
   .hero-brand-title {
     font-size: 1.6rem;
-  }
-
-  .hero-floating-card {
-    width: 180px;
-    padding: 14px 16px;
   }
 
   .u-section-1 .u-text-1 {
