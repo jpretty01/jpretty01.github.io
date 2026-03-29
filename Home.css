@@ -482,25 +482,67 @@
 }
 
 @media (max-width: 767px) {
+  .u-section-1,
+  .u-section-2,
+  .u-section-projects,
+  .u-section-3,
+  .u-section-4,
+  .u-section-5 {
+    padding: 28px 0;
+  }
+
   .hero-copy,
   .contact-premium-card {
-    padding: 24px;
+    padding: 22px;
+  }
+
+  .hero-shell {
+    gap: 20px;
+  }
+
+  .hero-metrics {
+    gap: 12px;
+    margin-top: 22px;
+  }
+
+  .metric-card {
+    padding: 16px;
   }
 
   .hero-visual {
-    min-height: 460px;
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .hero-visual::before {
+    inset: 14px;
   }
 
   .hero-brand-panel {
-    padding: 24px;
+    padding: 22px;
   }
 
   .hero-brand-title {
-    font-size: 1.6rem;
+    font-size: 1.45rem;
+  }
+
+  .hero-brand-text,
+  .hero-brand-pill,
+  .u-section-1 .u-text-3,
+  .section-intro,
+  .project-card p,
+  .project-card li {
+    font-size: 0.95rem;
+    line-height: 1.65;
   }
 
   .u-section-1 .u-text-1 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
+  }
+
+  .u-section-1 .u-text-2 {
+    font-size: 1.08rem;
+    line-height: 1.5;
   }
 
   .u-section-2 .u-text-1,
@@ -508,7 +550,12 @@
   .u-section-3 .u-text-1,
   .u-section-4 .u-text-1,
   .u-section-5 .u-text-1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .section-heading,
+  .section-heading.left {
+    margin-bottom: 24px;
   }
 
   .u-section-2 .u-container-layout-1,
@@ -522,6 +569,10 @@
   .project-card,
   .u-section-3 .u-container-layout-1,
   .u-section-3 .u-container-layout-2 {
-    padding: 22px;
+    padding: 20px;
+  }
+
+  .project-card h3 {
+    font-size: 1.22rem;
   }
 }

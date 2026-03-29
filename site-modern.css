@@ -164,13 +164,20 @@ body.u-body span {
     justify-content: center;
   }
 
-  .u-nav-container {
-    display: none;
+  .u-custom-menu.u-nav-container {
+    display: none !important;
+  }
+
+  .u-custom-menu.u-nav-container-collapse {
+    display: block !important;
+    width: 100%;
+    margin: 0;
   }
 
   .menu-collapse {
     display: flex !important;
     justify-content: center;
+    align-items: center;
     width: 100%;
   }
 
@@ -181,13 +188,13 @@ body.u-body span {
     width: 48px;
     height: 48px;
     border-radius: 12px;
-    background: rgba(255,255,255,0.92);
-    border: 1px solid #d9e3ef;
+    background: rgba(255,255,255,0.96) !important;
+    border: 1px solid #d9e3ef !important;
     color: var(--jp-text) !important;
   }
 
-  .u-nav-container-collapse {
-    margin: 0;
+  .menu-collapse svg {
+    fill: currentColor;
   }
 
   .u-sidenav {
@@ -198,38 +205,49 @@ body.u-body span {
   }
 
   .u-sidenav .u-menu-close {
-    color: #ffffff;
+    display: block !important;
+    color: #ffffff !important;
   }
 
   .u-sidenav-overflow {
-    padding: 72px 20px 24px;
+    padding: 72px 20px 24px !important;
   }
 
+  .u-popupmenu-items,
+  .u-nav.u-popupmenu-items,
   .u-nav-2 {
     display: flex !important;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100% !important;
+    visibility: visible !important;
+    opacity: 1 !important;
   }
 
+  .u-popupmenu-items .u-nav-item,
   .u-nav-2 .u-nav-item {
-    display: block;
-    width: 100%;
+    display: block !important;
+    width: 100% !important;
+    visibility: visible !important;
   }
 
+  .u-popupmenu-items .u-nav-link,
   .u-nav-2 .u-nav-link {
     display: block !important;
-    width: 100%;
+    width: 100% !important;
     padding: 14px 16px !important;
-    border-radius: 14px;
+    border-radius: 14px !important;
     color: #ffffff !important;
-    background: rgba(255,255,255,0.08);
-    text-align: left;
-    font-weight: 600;
+    background: rgba(255,255,255,0.08) !important;
+    text-align: left !important;
+    font-weight: 600 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
   }
 
+  .u-popupmenu-items .u-nav-link:hover,
   .u-nav-2 .u-nav-link:hover {
-    background: rgba(255,255,255,0.14);
+    background: rgba(255,255,255,0.14) !important;
     color: #ffffff !important;
   }
 
