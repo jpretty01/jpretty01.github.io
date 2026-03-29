@@ -131,14 +131,48 @@
   border: 1px solid rgba(255,255,255,0.12);
 }
 
-.portrait-frame {
+.hero-brand-panel {
   position: absolute;
-  inset: 48px 40px 140px 40px;
+  inset: 44px 34px 138px 34px;
   border-radius: 28px;
   background:
-    linear-gradient(180deg, rgba(10, 18, 32, 0.03), rgba(10, 18, 32, 0.24)),
-    url("images/jpretty01.jpg") center/cover no-repeat;
-  box-shadow: 0 22px 48px rgba(7, 18, 38, 0.32);
+    radial-gradient(circle at top left, rgba(255,255,255,0.18), transparent 36%),
+    linear-gradient(180deg, rgba(255,255,255,0.92), rgba(238,244,255,0.88));
+  box-shadow: 0 22px 48px rgba(7, 18, 38, 0.22);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 36px;
+}
+
+.brand-monogram {
+  width: 180px;
+  height: 180px;
+  border-radius: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4.4rem;
+  font-weight: 800;
+  letter-spacing: -0.08em;
+  color: #173d80;
+  background: linear-gradient(135deg, rgba(255,255,255,0.96), rgba(222,233,251,0.92));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.7), 0 18px 36px rgba(20, 47, 92, 0.12);
+}
+
+.brand-copy {
+  margin-top: 24px;
+  max-width: 280px;
+}
+
+.brand-copy .floating-value {
+  color: #39527f;
+  margin-top: 10px;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 600;
 }
 
 .hero-floating-card {
@@ -445,8 +479,15 @@
     min-height: 460px;
   }
 
-  .portrait-frame {
+  .hero-brand-panel {
     inset: 24px 18px 96px 18px;
+    padding: 24px;
+  }
+
+  .brand-monogram {
+    width: 136px;
+    height: 136px;
+    font-size: 3.4rem;
   }
 
   .hero-floating-card {
