@@ -63,24 +63,55 @@ body.u-body span {
   object-fit: cover;
 }
 
-.u-menu {
-  margin: 0 auto;
+.site-nav {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.u-nav-container,
-.u-nav-container-collapse {
-  margin: 0 auto;
+.site-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
 }
 
-.u-nav-1 > li > a,
-.u-nav-2 > li > a {
+.site-nav-list a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border-radius: 999px;
+  text-decoration: none;
   font-weight: 600;
-  color: var(--jp-text) !important;
+  color: var(--jp-text);
 }
 
-.u-nav-1 > li > a:hover,
-.u-nav-2 > li > a:hover {
-  color: var(--jp-primary) !important;
+.site-nav-list a:hover {
+  color: var(--jp-primary);
+  background: rgba(255,255,255,0.75);
+}
+
+.mobile-nav-toggle {
+  display: none;
+  border: 1px solid #d9e3ef;
+  background: rgba(255,255,255,0.96);
+  color: var(--jp-text);
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 700;
+}
+
+.site-mobile-menu {
+  display: none;
+}
+
+.site-mobile-menu:not([hidden]) {
+  display: none;
 }
 
 .u-section-1,
@@ -155,104 +186,52 @@ body.u-body span {
 @media (max-width: 767px) {
   .u-header .u-sheet-1 {
     min-height: 72px;
+  }
+
+  .site-nav {
     justify-content: center;
   }
 
-  .u-menu {
-    width: 100%;
+  .site-nav-list {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .site-mobile-menu:not([hidden]) {
     display: flex;
-    justify-content: center;
-  }
-
-  .u-custom-menu.u-nav-container {
-    display: none !important;
-  }
-
-  .u-custom-menu.u-nav-container-collapse {
-    display: block !important;
-    width: 100%;
-    margin: 0;
-  }
-
-  .menu-collapse {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  .menu-collapse a {
-    display: inline-flex !important;
-    align-items: center;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
-    background: rgba(255,255,255,0.96) !important;
-    border: 1px solid #d9e3ef !important;
-    color: var(--jp-text) !important;
-  }
-
-  .menu-collapse svg {
-    fill: currentColor;
-  }
-
-  .u-sidenav {
-    width: min(320px, 84vw) !important;
-    background: #13233f !important;
-    color: #ffffff !important;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(320px, calc(100vw - 24px));
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+    border-radius: 20px;
+    background: #13233f;
     box-shadow: 0 24px 60px rgba(0,0,0,0.25);
+    z-index: 120;
   }
 
-  .u-sidenav .u-menu-close {
-    display: block !important;
-    color: #ffffff !important;
+  .site-mobile-menu a {
+    display: block;
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 14px;
+    color: #ffffff;
+    background: rgba(255,255,255,0.08);
+    text-decoration: none;
+    font-weight: 600;
+    text-align: left;
   }
 
-  .u-sidenav-overflow {
-    padding: 72px 20px 24px !important;
-  }
-
-  .u-popupmenu-items,
-  .u-nav.u-popupmenu-items,
-  .u-nav-2 {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 10px !important;
-    width: 100% !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-
-  .u-popupmenu-items .u-nav-item,
-  .u-nav-2 .u-nav-item {
-    display: block !important;
-    width: 100% !important;
-    visibility: visible !important;
-  }
-
-  .u-popupmenu-items .u-nav-link,
-  .u-nav-2 .u-nav-link {
-    display: block !important;
-    width: 100% !important;
-    padding: 14px 16px !important;
-    border-radius: 14px !important;
-    color: #ffffff !important;
-    background: rgba(255,255,255,0.08) !important;
-    text-align: left !important;
-    font-weight: 600 !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-
-  .u-popupmenu-items .u-nav-link:hover,
-  .u-nav-2 .u-nav-link:hover {
-    background: rgba(255,255,255,0.14) !important;
-    color: #ffffff !important;
-  }
-
-  .u-menu-overlay {
-    background: rgba(9, 16, 30, 0.52) !important;
+  .site-mobile-menu a:hover {
+    background: rgba(255,255,255,0.14);
   }
 
   .u-section-1 .u-sheet-1,
