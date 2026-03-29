@@ -155,12 +155,86 @@ body.u-body span {
 @media (max-width: 767px) {
   .u-header .u-sheet-1 {
     min-height: 72px;
+    justify-content: center;
   }
 
-  .u-logo.u-image-1 {
-    width: 40px;
-    height: 40px;
-    min-width: 40px;
+  .u-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .u-nav-container {
+    display: none;
+  }
+
+  .menu-collapse {
+    display: flex !important;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .menu-collapse a {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.92);
+    border: 1px solid #d9e3ef;
+    color: var(--jp-text) !important;
+  }
+
+  .u-nav-container-collapse {
+    margin: 0;
+  }
+
+  .u-sidenav {
+    width: min(320px, 84vw) !important;
+    background: #13233f !important;
+    color: #ffffff !important;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.25);
+  }
+
+  .u-sidenav .u-menu-close {
+    color: #ffffff;
+  }
+
+  .u-sidenav-overflow {
+    padding: 72px 20px 24px;
+  }
+
+  .u-nav-2 {
+    display: flex !important;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .u-nav-2 .u-nav-item {
+    display: block;
+    width: 100%;
+  }
+
+  .u-nav-2 .u-nav-link {
+    display: block !important;
+    width: 100%;
+    padding: 14px 16px !important;
+    border-radius: 14px;
+    color: #ffffff !important;
+    background: rgba(255,255,255,0.08);
+    text-align: left;
+    font-weight: 600;
+  }
+
+  .u-nav-2 .u-nav-link:hover {
+    background: rgba(255,255,255,0.14);
+    color: #ffffff !important;
+  }
+
+  .u-menu-overlay {
+    background: rgba(9, 16, 30, 0.52) !important;
   }
 
   .u-section-1 .u-sheet-1,
