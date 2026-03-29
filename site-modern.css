@@ -223,15 +223,16 @@ body.u-body span {
     width: 100%;
     padding: 14px 16px;
     border-radius: 14px;
-    color: #ffffff;
-    background: rgba(255,255,255,0.08);
+    color: #f7fbff !important;
+    background: rgba(255,255,255,0.12);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     text-align: left;
   }
 
   .site-mobile-menu a:hover {
-    background: rgba(255,255,255,0.14);
+    background: rgba(255,255,255,0.18);
+    color: #ffffff !important;
   }
 
   .u-section-1 .u-sheet-1,
