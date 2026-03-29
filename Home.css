@@ -118,9 +118,12 @@
   position: relative;
   min-height: 640px;
   background:
-    radial-gradient(circle at top right, rgba(109, 145, 222, 0.3), transparent 34%),
+    radial-gradient(circle at top right, rgba(109, 145, 222, 0.34), transparent 34%),
     linear-gradient(160deg, #15386f 0%, #1f4f98 40%, #0f2a57 100%);
   overflow: hidden;
+  padding: 34px;
+  display: flex;
+  align-items: stretch;
 }
 
 .hero-visual::before {
@@ -132,46 +135,55 @@
 }
 
 .hero-brand-panel {
-  position: absolute;
-  inset: 44px 34px 138px 34px;
+  position: relative;
+  z-index: 2;
+  flex: 1;
   border-radius: 28px;
+  border: 1px solid rgba(255,255,255,0.12);
   background:
-    radial-gradient(circle at top left, rgba(255,255,255,0.18), transparent 36%),
-    linear-gradient(180deg, rgba(255,255,255,0.92), rgba(238,244,255,0.88));
-  box-shadow: 0 22px 48px rgba(7, 18, 38, 0.22);
+    radial-gradient(circle at top left, rgba(255,255,255,0.12), transparent 36%),
+    linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+  padding: 34px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 36px;
+  justify-content: space-between;
 }
 
-.brand-monogram {
-  width: 180px;
-  height: 180px;
-  border-radius: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 4.4rem;
+.hero-brand-copy {
+  max-width: 320px;
+}
+
+.hero-brand-title {
+  color: rgba(255,255,255,0.96);
+  font-size: 2rem;
   font-weight: 800;
-  letter-spacing: -0.08em;
-  color: #173d80;
-  background: linear-gradient(135deg, rgba(255,255,255,0.96), rgba(222,233,251,0.92));
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.7), 0 18px 36px rgba(20, 47, 92, 0.12);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
 }
 
-.brand-copy {
-  margin-top: 24px;
-  max-width: 280px;
-}
-
-.brand-copy .floating-value {
-  color: #39527f;
-  margin-top: 10px;
+.hero-brand-text {
+  margin-top: 16px;
+  color: rgba(235,242,255,0.82);
+  line-height: 1.75;
   font-size: 1rem;
-  line-height: 1.6;
+}
+
+.hero-brand-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.hero-brand-pill {
+  display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.92);
+  font-size: 0.9rem;
   font-weight: 600;
 }
 
@@ -480,14 +492,11 @@
   }
 
   .hero-brand-panel {
-    inset: 24px 18px 96px 18px;
     padding: 24px;
   }
 
-  .brand-monogram {
-    width: 136px;
-    height: 136px;
-    font-size: 3.4rem;
+  .hero-brand-title {
+    font-size: 1.6rem;
   }
 
   .hero-floating-card {
