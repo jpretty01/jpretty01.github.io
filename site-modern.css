@@ -218,6 +218,12 @@ body.u-body span {
     z-index: 120;
   }
 
+  .site-mobile-menu,
+  .site-mobile-menu * {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+  }
+
   .site-mobile-menu a,
   .site-mobile-menu a:visited,
   .site-mobile-menu a:hover,
@@ -228,18 +234,19 @@ body.u-body span {
     padding: 14px 16px;
     border-radius: 14px;
     color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff;
+    -webkit-text-fill-color: #ffffff !important;
     background: rgba(255,255,255,0.12) !important;
     text-decoration: none;
     font-weight: 700;
     text-align: left;
+    opacity: 1 !important;
   }
 
   .site-mobile-menu a:hover,
   .site-mobile-menu a:focus {
     background: rgba(255,255,255,0.18) !important;
     color: #ffffff !important;
-    -webkit-text-fill-color: #ffffff;
+    -webkit-text-fill-color: #ffffff !important;
   }
 
   .u-section-1 .u-sheet-1,
