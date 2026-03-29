@@ -218,21 +218,28 @@ body.u-body span {
     z-index: 120;
   }
 
-  .site-mobile-menu a {
+  .site-mobile-menu a,
+  .site-mobile-menu a:visited,
+  .site-mobile-menu a:hover,
+  .site-mobile-menu a:active,
+  .site-mobile-menu a:focus {
     display: block;
     width: 100%;
     padding: 14px 16px;
     border-radius: 14px;
-    color: #f7fbff !important;
-    background: rgba(255,255,255,0.12);
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff;
+    background: rgba(255,255,255,0.12) !important;
     text-decoration: none;
     font-weight: 700;
     text-align: left;
   }
 
-  .site-mobile-menu a:hover {
-    background: rgba(255,255,255,0.18);
+  .site-mobile-menu a:hover,
+  .site-mobile-menu a:focus {
+    background: rgba(255,255,255,0.18) !important;
     color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff;
   }
 
   .u-section-1 .u-sheet-1,
