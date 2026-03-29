@@ -52,7 +52,7 @@ body.u-body span {
   min-height: 82px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .u-logo.u-image-1 {
@@ -64,7 +64,12 @@ body.u-body span {
 }
 
 .u-menu {
-  margin-left: auto;
+  margin: 0 auto;
+}
+
+.u-nav-container,
+.u-nav-container-collapse {
+  margin: 0 auto;
 }
 
 .u-nav-1 > li > a,

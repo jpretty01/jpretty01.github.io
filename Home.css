@@ -140,15 +140,15 @@
   flex: 1;
   border-radius: 28px;
   border: 1px solid rgba(255,255,255,0.12);
-  background: linear-gradient(180deg, rgba(8,21,46,0.18), rgba(8,21,46,0.10));
+  background: linear-gradient(180deg, rgba(12,30,64,0.28), rgba(12,30,64,0.18));
   padding: 34px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .hero-brand-copy {
-  max-width: 360px;
+  max-width: 100%;
 }
 
 .hero-brand-title {
@@ -161,24 +161,26 @@
 
 .hero-brand-text {
   margin-top: 16px;
-  color: rgba(255,255,255,0.86);
-  line-height: 1.75;
+  color: rgba(255,255,255,0.92);
+  line-height: 1.8;
   font-size: 1rem;
+  max-width: 480px;
 }
 
 .hero-brand-list {
   display: grid;
-  gap: 14px;
-  margin-top: 26px;
+  gap: 12px;
+  margin-top: 24px;
+  max-width: 520px;
 }
 
 .hero-brand-pill {
   display: block;
   width: 100%;
   padding: 14px 16px;
-  border-radius: 18px;
+  border-radius: 16px;
   border: 1px solid rgba(255,255,255,0.14);
-  background: rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.10);
   color: #ffffff;
   font-size: 0.95rem;
   font-weight: 600;
