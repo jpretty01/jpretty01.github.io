@@ -56,12 +56,13 @@ body.u-body span {
 }
 
 .u-logo.u-image-1 {
-  width: 58px;
-  height: 58px;
-  min-width: 58px;
-  border-radius: 16px;
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 10px 24px rgba(33, 87, 182, 0.16);
+  box-shadow: 0 8px 18px rgba(33, 87, 182, 0.10);
+  background: #ffffff;
 }
 
 .u-logo-image.u-logo-image-1 {
@@ -158,9 +159,9 @@ body.u-body span {
   }
 
   .u-logo.u-image-1 {
-    width: 48px;
-    height: 48px;
-    min-width: 48px;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
   }
 
   .u-section-1 .u-sheet-1,
