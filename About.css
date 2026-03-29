@@ -1,71 +1,136 @@
-.u-section-1 {
-  background-image: linear-gradient(180deg, #f8fafc 0%, #eef3f8 100%);
+.u-section-1,
+.u-section-2 {
+  padding: 40px 0;
 }
 
-.u-section-1 .u-sheet-1 {
-  min-height: 760px;
+.u-section-1 .u-sheet-1,
+.u-section-2 .u-sheet-1 {
+  min-height: auto;
 }
 
-.u-section-1 .u-layout-wrap-1 {
-  margin: 60px auto;
+.about-hero {
+  display: grid;
+  grid-template-columns: 0.72fr 1.28fr;
+  gap: 28px;
+  align-items: stretch;
 }
 
-.u-section-1 .u-layout-cell-1,
-.u-section-1 .u-layout-cell-2 {
-  min-height: 620px;
+.about-portrait-wrap,
+.about-intro-card,
+.about-card {
+  border-radius: 28px;
+  border: 1px solid #d9e3ef;
+  box-shadow: 0 20px 46px rgba(21, 40, 74, 0.10);
 }
 
-.u-section-1 .u-container-layout-1,
-.u-section-1 .u-container-layout-2 {
+.about-portrait-wrap {
+  background: linear-gradient(160deg, #15386f 0%, #1f4f98 40%, #0f2a57 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+.about-portrait-wrap .u-image-1 {
+  width: 320px;
+  height: 320px;
+  background-image: url("images/thumbnail_lillith.jpg");
+  background-position: 50% 50%;
+  box-shadow: 0 20px 44px rgba(4, 10, 24, 0.28);
+}
+
+.about-intro-card,
+.about-card {
+  background: rgba(255,255,255,0.95);
+}
+
+.about-intro-card {
+  padding: 42px;
+  background:
+    radial-gradient(circle at top left, rgba(77, 121, 210, 0.14), transparent 34%),
+    linear-gradient(180deg, rgba(255,255,255,0.97), rgba(247,250,255,0.97));
+}
+
+.about-intro-card h1,
+.about-card h2,
+.about-card h3 {
+  margin: 10px 0 0;
+  letter-spacing: -0.02em;
+}
+
+.about-intro-card h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+
+.lead,
+.about-card p,
+.theme-list li {
+  line-height: 1.88;
+  color: #5a6b86;
+}
+
+.about-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.about-cta-row .u-btn {
+  border-radius: 999px;
+  padding: 12px 22px;
+  font-weight: 700;
+}
+
+.u-btn-secondary {
+  background: rgba(255,255,255,0.96);
+  border: 1px solid #cedbed;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+}
+
+.about-card {
   padding: 30px;
 }
 
-.u-section-1 .u-image-1 {
-  width: 300px;
-  height: 300px;
-  background-image: url("images/thumbnail_lillith.jpg");
-  background-position: 50% 50%;
-  box-shadow: 0 14px 32px rgba(25, 42, 70, 0.16);
-  margin: 0 auto;
+.wide-card {
+  grid-column: span 2;
 }
 
-.u-section-1 .u-text-1 {
-  font-size: 2.4rem;
-  font-weight: 700;
-  margin: 0;
-}
-
-.u-section-1 .u-text-2,
-.u-section-1 .u-text-3,
-.u-section-1 .u-text-4,
-.u-section-1 .u-text-5,
-.u-section-1 .u-text-6 {
-  line-height: 1.85;
-  margin: 20px 0 0;
-}
-
-@media (max-width: 1199px) {
-  .u-section-1 .u-sheet-1 {
-    min-height: 100px;
-  }
-
-  .u-section-1 .u-layout-cell-1,
-  .u-section-1 .u-layout-cell-2 {
-    min-height: 540px;
-  }
+.theme-list {
+  margin: 16px 0 0;
+  padding-left: 18px;
 }
 
 @media (max-width: 991px) {
-  .u-section-1 .u-layout-cell-1,
-  .u-section-1 .u-layout-cell-2 {
-    min-height: 100px;
+  .about-hero,
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wide-card {
+    grid-column: auto;
   }
 }
 
 @media (max-width: 767px) {
-  .u-section-1 .u-container-layout-1,
-  .u-section-1 .u-container-layout-2 {
-    padding-left: 10px;
-    padding-right: 10px;
+  .about-intro-card,
+  .about-card,
+  .about-portrait-wrap {
+    padding: 24px;
+  }
+
+  .about-intro-card h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-portrait-wrap .u-image-1 {
+    width: 250px;
+    height: 250px;
   }
 }
