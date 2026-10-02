@@ -576,3 +576,47 @@
     font-size: 1.22rem;
   }
 }
+
+/* Preserve the native screenshot's pixel edges as the project card scales. */
+.project-gameplay {
+  margin: 20px 0 0;
+  padding: 16px;
+  border-radius: 16px;
+  background: #101b2b;
+  text-align: center;
+}
+
+.project-gameplay img {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin: 0 auto;
+  image-rendering: pixelated;
+}
+
+.project-gameplay figcaption {
+  margin-top: 12px;
+  color: #e0e8f4;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.project-card-game .u-btn {
+  white-space: normal;
+}
+
+.project-card-game .u-btn:focus-visible {
+  outline: 3px solid #13233f;
+  outline-offset: 4px;
+}
+
+.project-link-note {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
