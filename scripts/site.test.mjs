@@ -13,7 +13,7 @@ test('all four existing resume PDFs remain available to open and download', asyn
   const html = await read('Resume.html');
   for (const file of [
     'Jeremy Pretty Chief AI Officer Executive Resume 2026-10-03.pdf',
-    'Jeremy Pretty Adjunct Faculty CV 2026-10-03.pdf',
+    'Jeremy Pretty Adjunct Faculty CV 2026-11-05.pdf',
     'Jeremy Pretty Gaming Resume 2026-10-03.pdf',
     'Jeremy Pretty Research CV 2026-10.pdf',
   ]) {
